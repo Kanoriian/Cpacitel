@@ -1,0 +1,42 @@
+s = "Abrakadabra"
+b = s[2]
+print(b)
+a = len(s)
+b = s[a-2]
+print(b)
+b = s[0:5]
+print(b)
+b = s[0:a-2]
+print(b)
+f = 0
+b = ""
+while f < a:
+    if f % 2 == 0:
+        b = b + s[f]
+    f = f + 1 
+print(b)
+f = 0
+b = ""
+while f < a:
+    if f % 2 == 1:
+        b = b + s[f]
+    f = f + 1 
+print(b)
+b = ""
+a = a - 1
+while a > 0:
+    b = b + s[a]
+    a = a - 1
+a = len(s)
+b = b + s[0]
+print(b)
+f = 0
+b = ""
+while f < a:
+    if a % 2 == 0:
+        b = b + s[a]
+    a = a - 1
+b = b + s[0]
+print(b)
+b = len(s)
+print(b)
