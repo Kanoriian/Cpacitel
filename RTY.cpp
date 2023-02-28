@@ -11,11 +11,7 @@ vector <int> sa(vector <int> mass){
     return mass;
 }
 
-vector <int> pb(vector <int> &mass1, vector <int> &mass2, int64_t msza){
-
-}
-
-void anti_fd8(vector <int> &mass){
+void ra(vector <int> &mass){ // 23451
     int k = mass[0];
     for(int i = 0; i < mass.size(); i++){
         mass[i] = mass[i+1];
@@ -23,7 +19,7 @@ void anti_fd8(vector <int> &mass){
     mass[mass.size()-1] = k;
 }
 
-void fd8(vector <int> &mass){
+void rra(vector <int> &mass){ // 51234
     if(mass.size() == 0){
     }else{
         int a = mass[mass.size()-1];
@@ -34,24 +30,52 @@ void fd8(vector <int> &mass){
     }
 }
 
+void pb(vector <int> &mass1, vector <int> &mass2, int msz1, int msz2){
+    if(msz2 == 0){
+        mass2[0] = mass1[0];
+        msz2++;
+    }if(msz2 == 1){
+        mass2[1] = mass2[0];
+        mass2[0] = mass1[0];
+        msz2++;
+    }else{
+        vector <int> massd = mass2;
+        for(int i = 0; i < msz2; i++){
+            mass2[i+1] = massd[i];
+        }
+        mass2[0] = mass1[0];
+        msz2++;
+    }
+    ra(mass1);
+    msz1--;
+}
+
 int main(){
     vector <int> massA(5);
-    vector <int> massB;
-    int64_t msza = massA.size();
-    int64_t mszB = 0;
+    vector <int> massB(3);
+    int mszA = 5;
+    int mszB = 3;
+
     massA[0] = 1;
     massA[1] = 2;
     massA[2] = 3;
     massA[3] = 4;
     massA[4] = 5;
 
+    massB[0] = 7;
+    massB[1] = 8;
+    massB[2] = 9;
 
-    massA = sa(massA);
+    pb(massA, massB, mszA, mszB);
+    mszA--;
+    mszB++;
 
-
-    cout << massA[0];
-    cout << massA[1];
-    cout << massA[2];
-    cout << massA[3];
-    cout << massA[4];
+    for(int i = 0; i < mszA; i++){
+        cout << massA[i] << endl;
+    }
+    cout << endl;
+    for(int i = 0; i < mszB; i++){
+        cout << massB[i] << endl;
+    }
+    return 0;
 }
