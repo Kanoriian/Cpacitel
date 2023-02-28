@@ -51,31 +51,19 @@ void pb(vector <int> &mass1, vector <int> &mass2, int msz1, int msz2){
 }
 
 int main(){
-    vector <int> massA(5);
-    vector <int> massB(3);
-    int mszA = 5;
-    int mszB = 3;
-
-    massA[0] = 1;
-    massA[1] = 2;
-    massA[2] = 3;
-    massA[3] = 4;
-    massA[4] = 5;
-
-    massB[0] = 7;
-    massB[1] = 8;
-    massB[2] = 9;
-
-    pb(massA, massB, mszA, mszB);
-    mszA--;
-    mszB++;
-
-    for(int i = 0; i < mszA; i++){
-        cout << massA[i] << endl;
+    vector <int> massA;
+    vector <int> massB;
+    int i = 0;
+    char cent;
+    while(i != 1){
+        if(cent != '!'){
+            cin >> massA[i];
+        }else{
+            i = 1;
+        }
     }
-    cout << endl;
-    for(int i = 0; i < mszB; i++){
-        cout << massB[i] << endl;
-    }
-    return 0;
+    int mszA = massA.size();
+    int mszB = massB.size();
+    cout << mszB;
 }
+
