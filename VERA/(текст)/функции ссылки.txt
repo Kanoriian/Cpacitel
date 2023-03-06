@@ -1,0 +1,8 @@
+https://docs.google.com/document/d/1yUuJV5VJitvMBzOb4FEtjsGSKrg6mnBu/edit                //easy
+https://docs.google.com/document/u/0/d/1aaVs-EKxDOG4XWkzXCcJmJztxl-PE-A-/mobilebasic     //middle
+
+https://docs.google.com/document/d/140vCgM-bxK5alfV3C6pnfHJj-mrKul97/edit                //easy_str
+https://docs.google.com/document/d/1iPYMFJ3hgxlPoO2KXbjMFpLqMP9tVTjX/edit                //middle_str
+
+https://docs.google.com/document/d/1VnlRgiVBjvsUNBD9Gfsth5BHggHD3vKY/edit?usp=sharing&ouid=106609357672389304664&rtpof=true&sd=true                                //easy_vector
+https://docs.google.com/document/d/1nZ-h6ojckb4rM1I7qiNRQHKCpW7StlUi/edit#               //middle_vector
