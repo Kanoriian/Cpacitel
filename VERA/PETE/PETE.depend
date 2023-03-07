@@ -1,0 +1,13 @@
+# depslib dependency file v1.0
+1677828192 source:c:\users\sch1561-it-30\desktop\pete\sort.cpp
+	"sort.h"
+
+1677828181 c:\users\sch1561-it-30\desktop\pete\sort.h
+	<iostream>
+	<vector>
+	<fstream>
+	<string>
+
+1677828214 source:c:\users\sch1561-it-30\desktop\pete\sort_main.cpp
+	"sort.h"
+
