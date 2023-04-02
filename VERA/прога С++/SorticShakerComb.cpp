@@ -4,6 +4,18 @@
 
 using namespace std;
 
+void pisirek(vector <int> &mass){
+    for(int k = 0; k < mass.size()-1; k++){
+        for(int i = 0; i < mass.size()-1; i++){
+            if(mass[i] > mass[i+1]){
+                mass[i] = mass[i] + mass[i+1];
+                mass[i+1] = mass[i] - mass[i+1];
+                mass[i] = mass[i] - mass[i+1];
+            }
+        }
+    }
+}
+
 void shakersort(vector <int> &mass){
     int leftIndex = 0;
     int rightIndex = mass.size()-1;
@@ -54,7 +66,9 @@ int main(){
         cin >> a;
         mass.push_back(a);
     }
-
+    
+    pisirek(mass);
+    shakersort(mass);
     combsort(mass);
 
     for(int i = 0; i < mass.size(); i++){
